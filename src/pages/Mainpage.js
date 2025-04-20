@@ -3,15 +3,19 @@ import '../pagescss/Mainpage.css';
 import {GiPoliceBadge} from 'react-icons/gi';
 // import {GiMedicalDrip} from 'react-icons/gi';
 import Footer from '../components/Footer';
+import { useNavigate } from 'react-router-dom';
 
 function Mainpage() {
+
+    const navi=useNavigate()
+
     return (
         <div className="Mainpage">
             <div className="d1">
                 <img src="https://www.cryptologos.cc/logos/bitcoin-btc-logo.png?v=014" alt="logo" />
                 <nav>
-                    <button>Login</button>
-                    <button>Signup</button>
+                    <button onClick={()=>{navi('/loginpage')}}>Login</button>
+                    <button onClick={()=>{navi('/signuppage')}}>Signup</button>
                 </nav>
             </div>
             <div className="d2">
