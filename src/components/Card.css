@@ -1,0 +1,32 @@
+.modal-content .modal-body {
+    padding: 0 !important;
+    display: flex;
+}
+
+.modal-content .modalsec1 {
+    display: flex;
+    flex: 1;
+    /* justify-content: center; */
+    align-items: center;
+    background-color:  #dee7ff;
+}
+
+.modal-content .modalsec2 {
+    flex: 2;
+    background-color:  #dee7ff;
+}
+.modal-content .modal-header {
+    background-color:  #10217d;
+}
+
+.modal-content .modalsec2 button{
+    padding:10px 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    color: white;
+    background-color: crimson;
+    border: none;
+    border-radius: 20px;
+}

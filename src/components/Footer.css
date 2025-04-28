@@ -1,5 +1,9 @@
+.footer{
+    color: azure;
+    background-color: #10217d;
+    width: 100%;
+}
 .f1{
-    background-color: bisque;
     display: flex;
     /* justify-content: space-evenly; */
     align-content: flex-start;
@@ -13,19 +17,16 @@
 }
 
 .f2{
-    background-color: bisque;
     display: flex;
     justify-content: space-evenly;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .f3{
-    background-color: bisque;
     display: flex;
     flex-direction: column ;
     padding-left: 50px;
 }
 .f4{
-    background-color: bisque;
     display: flex;
     padding: 10px;
     justify-content: center;

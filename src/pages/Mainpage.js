@@ -1,5 +1,5 @@
 import React from 'react';
-import '../pagescss/Mainpage.css';
+import './Mainpage.css';
 import {GiPoliceBadge} from 'react-icons/gi';
 // import {GiMedicalDrip} from 'react-icons/gi';
 import Footer from '../components/Footer';
@@ -62,9 +62,9 @@ function Mainpage() {
                 </div>
             </div>
             <div className="d5">
-                <img className="d5img" src="/image1.jpg" alt='img'/>
-                <h1 className='d5h1'>Need the best medicines?</h1>
-                <button className='d5btn'>Browse Medicines</button>
+                <img src="/image1.jpg" alt='img'/>
+                <h1 >Need the best medicines?</h1>
+                <button onClick={()=>{navi('/loginpage')}}>Login First</button>
             </div>
             <Footer/>
         </div>

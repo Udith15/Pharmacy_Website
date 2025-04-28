@@ -4,7 +4,7 @@ import Footerlist from './Footerlist'
 
 const Footer = () => {
   return (
-    <div>
+    <div className="footer">
       <div className='f1'>
         <img src="https://www.cryptologos.cc/logos/bitcoin-btc-logo.png?v=014" alt="logo" />
         <p className='f1p'>
