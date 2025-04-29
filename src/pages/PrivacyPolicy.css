@@ -1,0 +1,27 @@
+.privacy-container {
+    background-color: #f9fbff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.privacy-header {
+    /* background-color: #10217d; */
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.privacy-content {
+    flex: 1;
+    padding: 10px;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+}
+
+.privacy-content h2 {
+    margin-top: 30px;
+    color: #10217d;
+}

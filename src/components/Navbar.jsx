@@ -4,14 +4,20 @@ import './Navbar.css'
 const Navbar = () => {
     const navi=useNavigate();
   return (
-    <div className="navbar">
-      <button className="button1" onClick={()=>{navi('/mainpage')}}>Shop</button>
-      <button className="button1" onClick={()=>{navi('/cartpage')}}>Cart page</button>
-      <button className="button1" onClick={()=>{navi('/homepage')}}>About us</button>
-      <button className="button1" onClick={()=>{navi('/homepage')}}>Privacy Policy</button>
-      <button className="button1" onClick={()=>{navi('/homepage')}}>FAQ</button>
-      <button className="button1" onClick={()=>{navi('/homepage')}}>Terms and Conditions</button>
-      <button className="button1" onClick={()=>{navi('/')}}>Logout</button>
+    <div className="navr">
+      <div className="subdiv1">
+        <h2>Pharmacy.com</h2>
+      </div>
+      <div className="subdiv2">
+        <button className="button1" onClick={()=>{navi('/homepage')}}>Shop</button>
+        <button className="button1" onClick={()=>{navi('/cartpage')}}>Cart page</button>
+        <button className="button1" onClick={()=>{navi('/aboutuspage')}}>About us</button>
+        <button className="button1" onClick={()=>{navi('/privacypolicypage')}}>Privacy Policy</button>
+        <button className="button1" onClick={()=>{navi('/faqpage')}}>FAQ</button>
+        <button className="button1" onClick={()=>{navi('/termsconditionspage')}}>Terms and Conditions</button>
+        <button className="button1" onClick={()=>{navi('/')}}>Logout</button>
+
+      </div>
     </div>
   )
 }

@@ -1,0 +1,32 @@
+.about-container {
+    font-family: Arial, sans-serif;
+    background-color: #f8faff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-header {
+    /* background-color: #10217d; */
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-content {
+    flex: 1;
+    padding: 10px;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+}
+
+.about-content h2 {
+    margin-top: 30px;
+    color: #10217d;
+}
+
+.about-content ul {
+    padding-left: 20px;
+    list-style-type: disc;
+}

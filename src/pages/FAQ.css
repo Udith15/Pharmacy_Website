@@ -1,0 +1,26 @@
+.faq-container {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.faq-header {
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.faq-content {
+    flex: 1;
+    padding: 10px;
+    max-width: 900px;
+    margin: auto;
+    color: #333;
+}
+
+.faq-content h2 {
+    margin-top: 30px;
+    color: #10217d;
+}

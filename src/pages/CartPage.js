@@ -1,13 +1,16 @@
 import React from 'react';
 import { useCart } from '../components/CartContext';
+import { useNavigate } from 'react-router-dom';
 
 const CartPage = () => {
   const { cart, orders, removeFromCart, updateQuantity, placeOrder } = useCart();
-
+  const navi=useNavigate();
   const calculateTotal = () => cart.reduce((total, item) => total + (item.price * item.quantity), 0).toFixed(2);
 
   return (
+
     <div className="container py-5">
+      <button onClick={() => navi('/homepage')} className="btn btn-secondary mb-4">Back</button>
       <div className="row">
         {/* Current Cart */}
         <div className="col-lg-8">

@@ -44,6 +44,7 @@ export function CartProvider({ children }) {
     };
     
     setOrders(prevOrders => [newOrder, ...prevOrders]);
+    localStorage.setItem(Date.now(), JSON.stringify([newOrder]));
     setCart([]);
   };
 
