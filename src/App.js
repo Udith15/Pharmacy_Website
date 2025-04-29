@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Mainpage/>} />
+          <Route path='/Pharmacy_Website/' element={<Mainpage/>} />
           <Route path='/loginpage' element={<Loginpage/>} />
           <Route path='/signuppage' element={<Signuppage/>} />
           <Route path='/homepage' element={<Homepage/>} />
