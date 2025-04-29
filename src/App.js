@@ -13,6 +13,7 @@ import TermsConditions from './pages/TermsConditions';
 import Medicinepage from './pages/Medicinepage';
 import Healthcare from './pages/Healthcare';
 import Labtest from './pages/Labtest';
+import Forgotpassword from './pages/Forgotpassword';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path='/' element={<Mainpage/>} />
           <Route path='/loginpage' element={<Loginpage/>} />
           <Route path='/signuppage' element={<Signuppage/>} />
+          <Route path='/forgotpasspage' element={<Forgotpassword/>} />
           <Route path='/homepage' element={<Homepage/>} />
           <Route path='/cartpage' element={<CartPage/>} />
           <Route path='/aboutuspage' element={<AboutUs/>} />

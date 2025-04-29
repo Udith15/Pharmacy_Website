@@ -21,10 +21,10 @@ function Medicinepage() {
             <Card title="UD HCL" price="15.99$" imgpath="medi2.jpg" />
             <Card title="Ginkoba" price="9.99$" imgpath="medi3.jpg" />
             <Card title="Ambro" price="11.99$" imgpath="medi4.jpg" />
-            <Card title="Brain Touch 500" price="21.99$" imgpath="medi5.jpg" />
-            <Card title="Brain Touch 500" price="21.99$" imgpath="medi5.jpg" />
-            <Card title="Brain Touch 500" price="21.99$" imgpath="medi5.jpg" />
-            <Card title="Brain Touch 500" price="21.99$" imgpath="medi5.jpg" />
+            <Card title="Brain Touch 500" price="24.99$" imgpath="medi5.jpg" />
+            <Card title="Fekit" price="27.99$" imgpath="medi9.jpg" />
+            <Card title="Granisafe" price="41.99$" imgpath="medi7.jpg" />
+            <Card title="Betadine" price="29.99$" imgpath="medi8.jpg" />
             </div>
         </div>
         <Footer />

@@ -77,10 +77,14 @@ function Loginpage() {
                                 </div>
                             </div>
                             <button type='submit' className='login-submit-btn'>
-                                Sign In
+                                Log In
                             </button>
                         </form>
                     </div>
+                    <button 
+                        className='login-forgot-btn'
+                        onClick={() => { navigate('/forgotpasspage') }}
+                    >Forgot Password</button>
                 </div>
             </div>
         </div>
