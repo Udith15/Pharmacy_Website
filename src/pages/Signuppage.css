@@ -4,7 +4,7 @@
     flex-direction: column;
     height: 100vh;
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+    background:#10217d;
 }
 
 /* Header Section */
@@ -14,7 +14,7 @@
     flex: none;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(90deg, #0288d1 0%, #0277bd 100%);
+    background: #10217d;
 }
 
 .signup-tagline {
@@ -35,7 +35,7 @@
     font-size: 1rem;
     cursor: pointer;
     color: white;
-    background: linear-gradient(135deg, #ff6f00 0%, #ff8f00 100%);
+    background: crimson;
     border: none;
     border-radius: 50px;
     transition: all 0.3s ease;
@@ -75,7 +75,7 @@
 
 .signup-title {
     font-size: 2.2rem;
-    color: #0288d1;
+    color: #10217d;
     margin-bottom: 2rem;
     font-weight: 600;
     text-align: center;
@@ -109,14 +109,14 @@
 }
 
 .form-input:focus {
-    border-color: #0288d1;
+    border-color: #10217d;
     outline: none;
     box-shadow: 0 0 0 3px rgba(2, 136, 209, 0.2);
 }
 
 .signup-submit-btn {
     padding: 0.8rem;
-    background: linear-gradient(135deg, #0288d1 0%, #0277bd 100%);
+    background: #10217d;
     color: white;
     border: none;
     border-radius: 8px;
@@ -132,3 +132,9 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+.error-text {
+    color: red;
+    font-size: 0.85rem;
+    margin-top: 4px;
+}
+

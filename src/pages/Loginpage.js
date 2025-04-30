@@ -1,5 +1,4 @@
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Loginpage.css';
 
@@ -7,12 +6,34 @@ function Loginpage() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    const [errors, setErrors] = useState({});
     const navigate = useNavigate();
+
+    const validateForm = () => {
+        const newErrors = {};
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (!email.trim()) {
+            newErrors.email = "Email is required.";
+        } else if (!emailRegex.test(email)) {
+            newErrors.email = "Invalid email format.";
+        }
+
+        if (!password.trim()) {
+            newErrors.password = "Password is required.";
+        } else if (password.length < 6) {
+            newErrors.password = "Password must be at least 6 characters.";
+        }
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        const storedData = JSON.parse(localStorage.getItem(email));
+        if (!validateForm()) return;
 
+        const storedData = JSON.parse(localStorage.getItem(email));
         if (storedData) {
             if (storedData.password === password) {
                 alert("Login successful");
@@ -52,9 +73,9 @@ function Loginpage() {
                                     type="email" 
                                     placeholder='Enter your email' 
                                     value={email} 
-                                    onChange={(e) => { setEmail(e.target.value) }} 
-                                    required
+                                    onChange={(e) => setEmail(e.target.value)} 
                                 />
+                                {errors.email && <span className="error-text">{errors.email}</span>}
                             </div>
                             <div className='form-group'>
                                 <label className='form-label'>Password</label>
@@ -64,8 +85,7 @@ function Loginpage() {
                                         type={showPassword ? "text" : "password"} 
                                         placeholder='Enter your password' 
                                         value={password} 
-                                        onChange={(e) => { setPassword(e.target.value) }} 
-                                        required
+                                        onChange={(e) => setPassword(e.target.value)} 
                                     />
                                     <button 
                                         type="button" 
@@ -75,6 +95,7 @@ function Loginpage() {
                                         {showPassword ? '👁️' : '👁️‍🗨️'}
                                     </button>
                                 </div>
+                                {errors.password && <span className="error-text">{errors.password}</span>}
                             </div>
                             <button type='submit' className='login-submit-btn'>
                                 Log In
